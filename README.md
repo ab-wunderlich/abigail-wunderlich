@@ -1,2 +1,2 @@
-# abigail-wunderlich
+# Abigail Wunderlich
 Personal Website/Resume
