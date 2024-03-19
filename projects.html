@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <script src="project.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link rel="stylesheet" type="text/css" href="navigation.css" />
     <title>Abigail Wunderlich: Personal Website</title>
@@ -24,21 +25,56 @@
 
     <ul class="flex-container">
         <!-- TODO: perhaps each opens a box below it that describes it with more information and links etc -->
-        <li class="flex-item">
-            <a href="https://github.com/cseseniordesign/wetland-delineation">Wetland Determination</a>
+        <li class="flex-item project_card" onclick="showHide(document.getElementById('wetland'))">
+            <a>Wetland Determination</a>
             <br>
             <img src="images/usda.svg" alt="USDA Logo">
         </li>
-        <li class="flex-item">
-            <a href="https://github.com/cseseniordesign/know-your-well">Know Your Well</a>
+        <div class="project_description_card" id="wetland" style="display:none">
+            <p><b>USDA - NRCS - Wetland Determination Tool</b></p>
+            <p>The project will update the existing ArcGIS Pro-compatible wetland delineation tool with
+                 additional document management features that allow users to create publication-quality 
+                 maps and letters. The update will further automate the wetland determination process, 
+                 which supports the National Food Security Act Manual and Food Security Act Conservation 
+                 Compliance Program.</p>
+            <p>Github: <a href="https://github.com/cseseniordesign/wetland-delineation">Wetland Determination</a></p>
+        </div>
+
+        <li class="flex-item project_card" onclick="showHide(document.getElementById('kyw'))">
+            <a>Know Your Well</a>
             <br>
             <img src="images/kyw.png" alt="KYW Logo">
         </li>
-        <li class="flex-item">
-            <a href="https://git.unl.edu/bgarvin/poetical">Poetical</a>
+        <div class="project_description_card" id="kyw" style="display:none">
+            <p><b>Nebraska Water Center - Know Your Well</b></p>
+            <p>The Nebraska Water Center's long-term goal is to build a sustainable youth education well 
+                water program by extending the scope of previous Know Your Well (KYW) projects with a Natural 
+                Resources Districts (NRD) led program supported by the University of Nebraska Lincoln (UNL) 
+                and Kearney (UNK), involving up to 50 schools and 1,000 private wells across Nebraska. Specific 
+                objectives are to:</p>
+            <ul>
+                <li>Improve KYW's online presence, strengthen links to NRD stakeholders, and improve the 
+                    usability of the progressive web app for data collection and display.</li>
+                <li>Involve and train NRD staff in KYW-III program materials, and</li>
+                <li>Recruit and engage up to 50 school groups in sampling and testing up to 1,000 domestic 
+                    water wells, helping students relate results to land use, well construction, and hydrogeology.</li>
+            </ul>
+            <p>Github: <a href="https://github.com/cseseniordesign/know-your-well">Know Your Well</a></p>
+            <p></p>
+        </div>
+
+        <li class="flex-item project_card" onclick="showHide(document.getElementById('poetical'))">
+            <a>Poetical</a>
             <br>
             <img src="images/gitlab.png" alt="GitLab Logo" class="large_img">
         </li>
+        <div class="project_description_card" id="poetical" style="display:none">
+            <p><b>Professor Brady's Project: Poetical</b></p>
+            <p>Poetical is a collection of program analyses to assess and instruct introductory-level students on code 
+                style, both in terms of formatting and design.</p>
+            <p>Github: <a href="https://git.unl.edu/bgarvin/poetical">Poetical</a></p>
+        </div>
+
         <!-- Authenticare:
             https://merchants.fiserv.com/en-us/products/government-solutions/health-care/electronic-visit-verification/authenticare/
             https://www.authenticare.com/nmcc/login.aspx

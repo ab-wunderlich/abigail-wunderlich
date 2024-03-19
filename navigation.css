@@ -11,16 +11,16 @@
   background: darkgreen;
 }
   
-  @media all and (max-width: 800px) {
-    .nav_item {
-      justify-content: space-around;
-    }
+@media all and (max-width: 800px) {
+  .nav_item {
+    justify-content: space-around;
   }
-  
-  @media all and (max-width: 600px) {
-    .nav_item {
-      flex-flow: column wrap;
-      padding: 0;
-    }
+}
+
+@media all and (max-width: 600px) {
+  .nav_item {
+    flex-flow: column wrap;
+    padding: 0;
   }
+}
   
